@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 '''
 如何使用OpenerDirector处理HTTP/HTTPS的高级功能
 代理防禁止访问

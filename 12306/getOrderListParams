@@ -1,0 +1,7 @@
+queryType: 1
+queryStartDate: 2017-09-05
+queryEndDate: 2018-09-06
+come_from_flag: my_order
+pageSize: 8
+pageIndex: 0
+query_where: G
