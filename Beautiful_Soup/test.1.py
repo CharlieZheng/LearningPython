@@ -22,7 +22,7 @@ file_name = './fixtures.html'
 
 
 
-url = 'https://auto.163.com/'
+url = 'http://product.auto.163.com/rank/hotIndices_priceRegion_0_6_liangxiang.html#fixedpos'
  
 wb_data = requests.get(url)
 soup = BeautifulSoup(wb_data.text,'lxml')
@@ -49,7 +49,10 @@ for item in soup.stripped_strings:
 #     print(i), # 这里的逗号是必须的
 ''' 4. find_all '''
 
-# div = soup.find_all('p')
+div = soup.find_all('div', class_="rankcell_d") # div 的类型为 <Tag>[]
+
+div = div[0].find('a').find('img')
+img = div.attrs["src"] # 图片
 ''' 5. next_sibling next_element '''
 # div = soup.name
 # print(str(div))

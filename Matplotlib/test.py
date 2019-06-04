@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+'''
 row = 3
 col = 3
 x = np.linspace(-5, 5, 20) # 1000个点
@@ -53,6 +54,18 @@ plt.hist(x, 50)
 
 
 
+add_subplot
 
+plt.show()
+'''
+x = np.arange(0.3, 100)
+y = x*x
+# plt.plot(x, y)
+fig = plt.figure()
+ax = fig.add_subplot(111)
+f = np.log10(x)
 
+plt.plot(x, f)
+f = np.log10(y)
+plt.plot(x, f ,'r')
 plt.show()
